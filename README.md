@@ -16,3 +16,6 @@ import memimport, sys
 sys.meta_path.insert(0,memimport.MemImporter(memfs))
 import demo
 ```
+
+Example usage
+![image](https://user-images.githubusercontent.com/44292326/209714185-a85ab6fb-e38c-4799-9604-8340f2ec1d6c.png)
