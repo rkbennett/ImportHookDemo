@@ -5,7 +5,7 @@ class MyImporter(object):
         self.override = override
   
     def find_module(self, module, path=None):
-        if self.override:
+        if module in self.override:
             return self
         else:
             return None
