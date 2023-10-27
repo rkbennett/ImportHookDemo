@@ -1,6 +1,6 @@
 import sys, types
 
-class MyImplorter(object):
+class MyImporter(object):
     def __init__(self, override):
         self.override = override
   
@@ -17,5 +17,5 @@ class MyImplorter(object):
         mod.__package__ = name
         mod.__path__ = name.replace('.','/') + '/'
         sys.modules[name] = mod
-        exec('print("Meow")\n',mod.__dict__)
+        exec('print("Meow")\ndef foo():\n  print("Meow")',mod.__dict__)
         return mod
