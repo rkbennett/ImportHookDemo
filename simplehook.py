@@ -1,6 +1,6 @@
 import sys, types
 
-class MyImplorter(object):
+class MyImporter(object):
     def find_module(self, module, path=None):
         return self
       
@@ -11,5 +11,5 @@ class MyImplorter(object):
         mod.__package__ = name
         mod.__path__ = name.replace('.','/') + '/'
         sys.modules[name] = mod
-        exec('print("Meow")\n',mod.__dict__)
+        exec('print("Meow")\ndef foo():\n  print("Meow")',mod.__dict__)
         return mod
