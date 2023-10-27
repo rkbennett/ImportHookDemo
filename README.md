@@ -4,6 +4,9 @@ A collection of simple import hooks for a demonstration
 ## Simplehook
 ![image](https://github.com/rkbennett/ImportHookDemo/assets/44292326/94bba764-aeec-4ab1-a901-19edf24ada9d)
 
+## MyImporter
+![image](https://github.com/rkbennett/ImportHookDemo/assets/44292326/c070030d-eb46-4f03-9c42-010d93c739e2)
+
 
 The memimport hook requires pyFileSystem (fs) to be installed
 
